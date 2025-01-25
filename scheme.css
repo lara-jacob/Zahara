@@ -7,7 +7,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #4a90e2;
+    color: #be0d7dc4;
     margin: 20px 0;
     font-size: 2.5rem;
 }
@@ -42,7 +42,7 @@ select {
 
 select:focus {
     outline: none;
-    box-shadow: 0 0 5px #4a90e2;
+    box-shadow: 0 0 5px #d746c3;
 }
 
 .main-container {
@@ -77,7 +77,7 @@ select:focus {
 
 .scheme {
     padding: 15px 20px;
-    background: linear-gradient(135deg, #eaf6ff, #e0effe);
+    background: linear-gradient(135deg, #faa8f5, #e0effe);
     border-radius: 12px;
     border: 1px solid #d4e2f7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -90,12 +90,12 @@ select:focus {
 .scheme:hover {
     transform: translateY(-8px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, #d8ebff, #cce3ff);
+    background: linear-gradient(135deg, #d8ebff, #faa8f5);
 }
 
 .scheme-details h2 {
     font-size: 2rem;
-    color: #4a90e2;
+    color: #be0d7dc4;
     margin-bottom: 15px;
 }
 
