@@ -25,6 +25,7 @@ bcrypt = Bcrypt(app)
 def home():
     return render_template('signin.html', message=None)
 
+
 # Route to handle sign-in form submission
 @app.route('/signin', methods=['POST'])
 def signin():
@@ -57,7 +58,7 @@ def signin():
     finally:
         cursor.close()
 
-    return render_template('signin.html', message=message)
+    return render_template('scheme.html', message=message)
 
 
 

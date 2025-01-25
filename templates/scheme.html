@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Filter</title>
+   
+</head>
+
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #be0d7dc4;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    transition: box-shadow 0.2s;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d746c3;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    min-height: 320px;
+    text-align: center;
+}
+
+.scheme {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #faa8f5, #e0effe);
+    border-radius: 12px;
+    border: 1px solid #d4e2f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.scheme:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #d8ebff, #faa8f5);
+}
+
+.scheme-details h2 {
+    font-size: 2rem;
+    color: #be0d7dc4;
+    margin-bottom: 15px;
+}
+
+.scheme-details p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+</style>
+<body>
+    <h1>Scheme Filter</h1>
+    <div class="filter-container">
+        <label for="age">Age:</label>
+        <select id="age" onchange="filterSchemes()">
+            <option value="">Select Age</option>
+            <option value="child">Child</option>
+            <option value="teen">Teen</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <label for="purpose">Purpose:</label>
+        <select id="purpose" onchange="filterSchemes()">
+            <option value="">Select Purpose</option>
+            <option value="education">Education</option>
+            <option value="retirement">Retirement</option>
+            <option value="investment">Investment</option>
+            <option value="health">Health</option>
+            <option value="housing">Housing</option>
+        </select>
+    </div>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="scheme" data-age="child" data-purpose="education" 
+                onmouseover="showDetails(this, 'Sukanya Samridhi Scheme', 'This scheme is designed to support the education of children through scholarships and financial aid.')">
+                <a href="https://www.nsiindia.gov.in/(S(fu5avy55od1srt55hsaxv1bc))/InternalPage.aspx?Id_Pk=89" target="_blank">Sukanya Samridhi Scheme</a>
+            </div>
+
+            <div class="scheme" data-age="child" data-purpose="health" 
+                onmouseover="showDetails(this, 'Aswasanidhi Scheme', 'This scheme offers compensation for victims of natural disasters and other calamities.')">
+                <a href="https://example.com/aswasanidhi" target="_blank">Aswasanidhi Scheme for Children</a>
+            </div>
+
+            <div class="scheme" data-age="teen" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Orient Mahila Vikas Yojana', 'This scheme offers loans without collateral security and provides a concession on interest rates up to 2%.')">
+                <a href="https://example.com/orient-mahila-vikas" target="_blank">Orient Mahila Vikas Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="teen" data-purpose="investment" 
+                onmouseover="showDetails(this, 'SUBHADRA', 'The scheme provides direct benefits and incentivizes digital transactions, focusing on improving the socio-economic conditions of women and their families.')">
+                <a href="https://example.com/subhadra" target="_blank">SUBHADRA</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Mahila Samriddhi Yojana', 'This is a scheme aimed to benefit the women entrepreneurs from backward backgrounds or poor backgrounds.')">
+                <a href="https://example.com/mahila-samriddhi" target="_blank">Mahila Samriddhi Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Mukhya Mantri Grihini Suvidha Yojana', 'The Yojana aims to free women of Himachal Pradesh from the indoor pollution by providing free LPG connections to families with no gas connection.')">
+                <a href="https://example.com/mukhya-mantri-grihini" target="_blank">Mukhya Mantri Grihini Suvidha Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Mukhya Mantri Kanyadaan Yojana', 'The Mukhya Mantri Kanyadan Yojana in Himachal Pradesh is a welfare scheme aimed at providing financial assistance for the marriage of daughters from economically weaker sections of society.')">
+                <a href="https://example.com/mukhya-mantri-kanyadaan" target="_blank">Mukhya Mantri Kanyadaan Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Indira Gandhi Pyari Behna Sukh-Samman Nidhi Yojana', 'The scheme recognizes the significant contributions of women in household work, cultural preservation, and family economy by providing a monthly assistance.')">
+                <a href="https://example.com/indira-gandhi-pyari-behna" target="_blank">Indira Gandhi Pyari Behna Sukh-Samman Nidhi Yojana</a>
+            </div>
+        </div>
+
+        <div class="description-container">
+            <div id="scheme-details" class="scheme-details">
+                <h2 id="scheme-title"></h2>
+                <p id="scheme-description"></p>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="scheme" data-age="child" data-purpose="education" 
+                onmouseover="showDetails(this, 'Beti Bachao Beti Padhao', 'The scheme aims to educate citizens against gender bias and improve the efficacy of welfare services for girls.')">
+                <a href="https://www.pmindia.gov.in/en/government_tr_rec/beti-bachao-beti-padhao-caring-for-the-girl-child/" target="_blank">Beti Bachao Beti Padhao</a>
+            </div>
+
+            <div class="scheme" data-age="teen" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Kanya Sumangala Yojana', 'The main objective of Kanya Sumangala Yojana is to end female feticide, establish an equal gender ratio, stop the malpractice of child marriage, and improve the health of girls. And to encourage education, help in making girls self-reliant, to develop positive thinking in the society towards the birth of a girl child.')">
+                <a href="https://example.com/kanya-sumangala" target="_blank">Kanya Sumangala Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="health" 
+                onmouseover="showDetails(this, 'Janani Shishu Kshema Scheme', 'Entitles all pregnant women delivering in public health institutions to absolutely free delivery.')">
+                <a href="https://example.com/janani-shishu" target="_blank">Janani Shishu Kshema Scheme</a>
+            </div>
+
+            <div class="scheme" data-age="teen" data-purpose="education" 
+                onmouseover="showDetails(this, 'Pragathi AICTE', 'Scholarship scheme for single girl children pursuing education.')">
+                <a href="https://example.com/pragathi-aicte" target="_blank">Pragathi AICTE</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Stand Up India', 'Provides collateral-free loans to entrepreneurs for greenfield enterprises.')">
+                <a href="https://example.com/stand-up-india" target="_blank">Stand Up India</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Mukhyamantri Kanya Vivah Yojana', 'Under the scheme girls can complete their studies and at the same time, on getting married at the right age, the government will give financial assistance at the time of marriage, which will bring more awareness among the people.')">
+                <a href="https://example.com/mukhyamantri-kanya-vivah" target="_blank">Mukhyamantri Kanya Vivah Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="adult" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Pradhan Mantri Ujjwala Yojana', 'Objective to make clean cooking fuel such as LPG available to the rural and deprived households which were otherwise using traditional cooking fuels such as firewood, coal, cow-dung cakes etc.')">
+                <a href="https://example.com/pm-ujjwala" target="_blank">Pradhan Mantri Ujjwala Yojana</a>
+            </div>
+
+            <div class="scheme" data-age="teen" data-purpose="investment" 
+                onmouseover="showDetails(this, 'Beti Hai Anmol Yojana', 'This scheme is a welfare scheme to provide financial assistance to girl children of BPL Families but only up to two girls in a family.')">
+                <a href="https://example.com/beti-hai-anmol" target="_blank">Beti Hai Anmol Yojana</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scheme.js"></script>
+</body>
+</html>

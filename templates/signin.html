@@ -4,110 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <style>body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f3f3;
-}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
 
-.container {
-    display: flex;
-    width: 800px; /* Width of the container */
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+        .container {
+            display: flex;
+            width: 800px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
-.welcome-section {
-    display: flex;
-    width: 100%;
-}
+        .welcome-section {
+            display: flex;
+            width: 100%;
+        }
 
-.login-section {
-    width: 50%;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
+        .login-section {
+            width: 50%; /* Adjusted to give equal space */
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
 
-.upload-section {
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-left: 1px solid #ddd; /* Add a border to separate sections */
-}
+        .upload-section {
+            width: 50%; /* Adjusted to give equal space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-left: 1px solid #ddd;
+            overflow: hidden; /* Prevents image overflow */
+            position: relative;
+        }
 
-.upload-section input {
-    margin: 20px 0;
-}
+        #image-preview {
+            width: 100%; /* Fill the container width */
+            height: 100%; /* Fill the container height */
+            object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+        }
 
-#image-preview {
-    max-width: 100%;
-    max-height: 300px;
-    margin-top: 20px;
-    border: 2px solid #ddd;
-}
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+        form {
+            margin-top: 20px;
+            width: 100%;
+        }
 
-.social-buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #ddd;
-}
+        input {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-form {
-    margin-top: 20px;
-}
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-input {
-    display: block;
-    width: calc(100% - 20px);
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-</style>
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -115,31 +98,18 @@ a:hover {
             <!-- Left side: Login Section -->
             <div class="login-section">
                 <h2>Sign In to Your Account</h2>
-                <div class="social-buttons">
-                    <button>F</button>
-                    <button>G+</button>
-                    <button>in</button>
-                </div>
-                <p>or use your email to sign in:</p>
-                <!-- Updated Form -->
                 <form action="/signin" method="POST">
                     <input type="email" name="email" placeholder="Email" id="email" required>
                     <input type="password" name="password" placeholder="Password" id="password" required>
                     <button type="submit">SIGN IN</button>
                 </form>
-                <p>Already have an account <a href="login.html">Sign Up</a></p>
             </div>
             
             <!-- Right side: Image Upload Section -->
             <div class="upload-section">
-                <h2>Upload Your Image</h2>
-                <input type="file" id="image-upload" accept="image/*">
-                <div id="preview-container">
-                    <img id="image-preview" alt="Image Preview" style="display: none;">
-                </div>
+                <img id="image-preview" src="signin.jpeg" alt="Uploaded Image">
             </div>
         </div>
     </div>
-    <script src="app.py"></script>
 </body>
 </html>
