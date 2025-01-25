@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="templates/signin.css">
 </head>
 <body>
     <div class="container">
@@ -20,11 +20,11 @@
                 <p>or use your email to sign in:</p>
                 <!-- Updated Form -->
                 <form action="/signin" method="POST">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                    <input type="password" name="password" placeholder="Password" id="password" required>
                     <button type="submit">SIGN IN</button>
                 </form>
-                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p>Already have an account <a href="login.html">Sign Up</a></p>
             </div>
             
             <!-- Right side: Image Upload Section -->
@@ -37,6 +37,6 @@
             </div>
         </div>
     </div>
-    <script src="signin.js"></script>
+    <script src="app.py"></script>
 </body>
 </html>
