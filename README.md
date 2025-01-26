@@ -42,7 +42,7 @@ For Software:
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 Home page
 ![Screenshot (2)](https://github.com/user-attachments/assets/e42f447b-ba77-4ded-b679-05c6538824a6)
 
