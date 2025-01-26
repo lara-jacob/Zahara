@@ -20,10 +20,10 @@ SQL database for storing user and application data
 
 ## Usage
 ##### Home Page:
-       The landing page introduces the Zahara Project and its mission of empowering women.
+       .> The landing page introduces the Zahara Project and its mission of empowering women.
 ###### Browse Schemes: 
-       Use the search bar or filters to explore various government schemes available for women.
+       .> Use the search bar or filters to explore various government schemes available for women.
 ##### Scheme Details: 
-       Click on any scheme to view detailed information about its benefits, eligibility, and how to apply.
+       .> Click on any scheme to view detailed information about its benefits, eligibility, and how to apply.
 ##### Stay Updated: 
-       The website is regularly updated with new schemes and policies, providing users with the latest information.
+       .> The website is regularly updated with new schemes and policies, providing users with the latest information.
