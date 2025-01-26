@@ -20,10 +20,16 @@ db = mysql.connector.connect(
 # Initialize bcrypt for password hashing
 bcrypt = Bcrypt(app)
 
-# Route for the sign-in page
+# Route for the home page
 @app.route('/')
 def home():
+    return render_template('home.html', message=None)
+
+# Route for the sign-in page
+@app.route('/signin_form')
+def signin_form():
     return render_template('signin.html', message=None)
+
 
 
 # Route to handle sign-in form submission
@@ -61,6 +67,6 @@ def signin():
     return render_template('scheme.html', message=message)
 
 
-
 if __name__ == '__main__':
     app.run(debug=True)
+

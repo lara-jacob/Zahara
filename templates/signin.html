@@ -31,7 +31,7 @@
         }
 
         .login-section {
-            width: 50%; /* Adjusted to give equal space */
+            width: 50%;
             padding: 20px;
             height: 100%;
             display: flex;
@@ -43,20 +43,20 @@
         }
 
         .upload-section {
-            width: 50%; /* Adjusted to give equal space */
+            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             border-left: 1px solid #ddd;
-            overflow: hidden; /* Prevents image overflow */
+            overflow: hidden;
             position: relative;
         }
 
         #image-preview {
-            width: 100%; /* Fill the container width */
-            height: 100%; /* Fill the container height */
-            object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h2 {
@@ -98,7 +98,7 @@
             <!-- Left side: Login Section -->
             <div class="login-section">
                 <h2>Sign In to Your Account</h2>
-                <form action="/signin" method="POST">
+                <form id="signin-form">
                     <input type="email" name="email" placeholder="Email" id="email" required>
                     <input type="password" name="password" placeholder="Password" id="password" required>
                     <button type="submit">SIGN IN</button>
@@ -111,5 +111,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('signin-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the email and password values
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Simple validation
+            if (email && password) {
+                // Redirect to scheme.html
+                window.location.href = "scheme.html";
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
 </body>
 </html>
