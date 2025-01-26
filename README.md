@@ -1,12 +1,11 @@
 # Zahara Project
-The Zahara Project is a web-based application designed to provide users with a seamless experience for managing various features like user authentication, dynamic content management, and interactive functionalities. This project uses a combination of frontend technologies (HTML, CSS, JavaScript) and a backend framework (Flask with Python) to create a robust and efficient system.
+The Zahara Project is a web-based platform aimed at empowering women by providing awareness about various government schemes and initiatives that can significantly improve their quality of life. The platform offers detailed information about available schemes, eligibility criteria, application processes, and other essential resources to help women take full advantage of these opportunities.
 
 ## Features
--> User Authentication: A secure sign-in process using email and password.
--> Dynamic Content: Interactive pages with data and content that update based on user interactions.
--> Responsive Design: Optimized layout for mobile and desktop devices.
--> Form Validation: Ensures that users enter valid data before submitting.
-->Redirection: Redirects users to a relevant page after successful sign-in.
+-> Government Scheme Availability: A comprehensive collection of government schemes targeted at women's welfare, covering various sectors such as health, education, employment, and social security.
+-> Search and Filter: Users can search for specific schemes or filter them by categories such as eligibility, region, and benefits.
+-> Scheme Details: Detailed information about each scheme, including the purpose, application procedure, benefits, and eligibility.
+-> Interactive User Interface: User-friendly navigation to explore various schemes and find relevant information.
 
 ## Technologies Used
 #### Frontend:
