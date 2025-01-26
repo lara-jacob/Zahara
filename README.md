@@ -60,6 +60,7 @@ Main page
 - Nandana A: Frontend and Data Collection  
 - Rizia Sara Prabin: Frontend and Data Collection  
 
+![WhatsApp Image 2025-01-26 at 10 51 37_561fa1e7](https://github.com/user-attachments/assets/2879e574-184b-42c3-9d56-233ba85238d3)
 
 
 Made with ❤️ at TinkerHub
