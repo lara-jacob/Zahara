@@ -1,4 +1,4 @@
-# Zahara 🎯
+# Zahara ~ Discover.Inspire.Lead 🎯
 
 
 ## Basic Details
