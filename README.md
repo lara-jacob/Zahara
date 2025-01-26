@@ -1,37 +1,95 @@
-# Zahara Project
-
-The Zahara Project is a web-based platform aimed at empowering women by providing awareness about various government schemes and initiatives that can significantly improve their quality of life. The platform offers detailed information about available schemes, eligibility criteria, application processes, and other essential resources to help women take full advantage of these opportunities.
-
-## Features
-
-- **Government Scheme Availability**: A comprehensive collection of government schemes targeted at women's welfare, covering various sectors such as health, education, employment, and social security.
-- **Search and Filter**: Users can search for specific schemes or filter them by categories such as eligibility, region, and benefits.
-- **Scheme Details**: Detailed information about each scheme, including the purpose, application procedure, benefits, and eligibility.
-- **Interactive User Interface**: User-friendly navigation to explore various schemes and find relevant information.
-
-## Technologies Used
-
-### Frontend:
-- HTML for structure
-- CSS for styling and layout
-- JavaScript for interactivity and form validation
-
-### Backend:
-- Python with Flask for handling requests and data processing
-- SQL database for storing user and application data
-
-## Usage
-
-### Home Page:
-- The landing page introduces the Zahara Project and its mission of empowering women.
-
-### Browse Schemes:
-- Use the search bar or filters to explore various government schemes available for women.
-
-### Scheme Details:
-- Click on any scheme to view detailed information about its benefits, eligibility, and how to apply.
-
-### Stay Updated:
-- The website is regularly updated with new schemes and policies, providing users with the latest information.
+# Zahara 🎯
 
 
+## Basic Details
+### Team Name: Thrivers
+
+
+### Team Members
+- Member 1: Nandana A - Saintgits College of Engineering
+- Member 2: Rizia Sara Prabin- Saintgits College of Engineering
+- Member 3: Lara Marium Jacob- Saintgits College of Engineering
+
+### Hosted Project Link
+https://lara-jacob.github.io/Zahara/
+
+### Project Description
+Zahara is a centralized web platform that provides women with easy access to information on government schemes, policies, and scholarships. It features interactive quizzes on women’s rights, a success story section for inspiration, and email notifications about new opportunities. Zahara aims to empower women by bridging the gap in awareness and accessibility.
+Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas. Zahara aims to bridge this gap by providing a centralized platform with interactive features like quizzes, success stories, and timely notifications.
+
+### The Problem statement
+Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas. Zahara aims to bridge this gap by providing a centralized platform with interactive features like quizzes, success stories, and timely notifications.
+
+
+### The Solution
+Zahara provides a user-friendly web platform that centralizes all information on government schemes, policies, and scholarships for women, making it easily accessible.It empowers women with the knowledge and tools to make informed decisions and seize available opportunities.
+
+## Technical Details
+### Technologies/Components Used
+For Software:
+- HTML,CSS,JavaScript
+- Visual Studio Code,Git,GitHub
+
+### Implementation
+For Software:
+# Installation
+1.Clone or download this repository to your local machine:
+   git clone https:/
+
+# Run
+[commands]
+
+### Project Documentation
+For Software:
+
+# Screenshots (Add at least 3)
+![Screenshot1](Add screenshot 1 here with proper name)
+*Add caption explaining what this shows*
+
+![Screenshot2](Add screenshot 2 here with proper name)
+*Add caption explaining what this shows*
+
+![Screenshot3](Add screenshot 3 here with proper name)
+*Add caption explaining what this shows*
+
+# Diagrams
+![Workflow](Add your workflow/architecture diagram here)
+*Add caption explaining your workflow*
+
+For Hardware:
+
+# Schematic & Circuit
+![Circuit](Add your circuit diagram here)
+*Add caption explaining connections*
+
+![Schematic](Add your schematic diagram here)
+*Add caption explaining the schematic*
+
+# Build Photos
+![Team](Add photo of your team here)
+
+
+![Components](Add photo of your components here)
+*List out all components shown*
+
+![Build](Add photos of build process here)
+*Explain the build steps*
+
+![Final](Add photo of final product here)
+*Explain the final build*
+
+### Project Demo
+# Video
+[Add your demo video link here]
+*Explain what the video demonstrates*
+
+# Additional Demos
+[Add any extra demo materials/links]
+
+## Team Contributions
+- [Name 1]: [Specific contributions]
+- [Name 2]: [Specific contributions]
+- [Name 3]: [Specific contributions]
+
+---
+Made with ❤️ at TinkerHub
