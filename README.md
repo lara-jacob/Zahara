@@ -15,10 +15,10 @@ https://lara-jacob.github.io/Zahara/
 
 ### Project Description
 Zahara is a centralized web platform that provides women with easy access to information on government schemes, policies, and scholarships. It features interactive quizzes on women’s rights, a success story section for inspiration, and email notifications about new opportunities. Zahara aims to empower women by bridging the gap in awareness and accessibility.
-Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas. Zahara aims to bridge this gap by providing a centralized platform with interactive features like quizzes, success stories, and timely notifications.
+Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas. 
 
 ### The Problem statement
-Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas. Zahara aims to bridge this gap by providing a centralized platform with interactive features like quizzes, success stories, and timely notifications.
+Many women struggle to access and utilize government schemes, policies, and scholarships due to scattered and inaccessible information. This lack of awareness limits opportunities, especially in underprivileged areas.
 
 
 ### The Solution
@@ -35,7 +35,7 @@ For Software:
 # Installation
 1.Clone or download this repository to your local machine:
    git clone (https://github.com/lara-jacob/Zahara.git)
-2.Install the required dependencies
+2.Install the required dependencies.
 
 
 
