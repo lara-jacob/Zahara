@@ -56,9 +56,9 @@ Main page
 ![Screenshot (5)](https://github.com/user-attachments/assets/80a104fc-115a-4392-b72e-d3ce79e11d6b)
 
 # Team Contributions
-   .Lara Marium Jacob:UI and documentation
-   .Nandana A :Frontend and Datacollection
-   .Rizia Sara Prabin:Frontend and Datacollection
+- Lara Marium Jacob: UI and Documentation  
+- Nandana A: Frontend and Data Collection  
+- Rizia Sara Prabin: Frontend and Data Collection  
 
 
 
