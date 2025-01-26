@@ -44,11 +44,17 @@ For Software:
 
 # Screenshots (Add at least 3)
 Home page
+![Screenshot (2)](https://github.com/user-attachments/assets/e42f447b-ba77-4ded-b679-05c6538824a6)
+
 
 Sign-in page
+![Screenshot (3)](https://github.com/user-attachments/assets/37840b48-f1d3-4a50-a3fd-ad36eb2499ec)
+
 
 
 Main page
+![Screenshot (5)](https://github.com/user-attachments/assets/80a104fc-115a-4392-b72e-d3ce79e11d6b)
+
 
 
 
