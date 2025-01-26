@@ -31,8 +31,8 @@ For Software:
 - Visual Studio Code,Git,GitHub
 
 ### Implementation
-For Software:
-# Installation
+##### For Software:
+###### Installation
 1.Clone or download this repository to your local machine:
    git clone (https://github.com/lara-jacob/Zahara.git)
 2.Install the required dependencies.
